@@ -24,6 +24,10 @@ wss.on('connection', (ws) => {
     ws.on('close', () => {
         console.log('Клиент отключился');
     });
+
+    ws.on('error', (error) => {
+        console.error('Ошибка соккета:', error)
+    })
 });
 
 console.log('Сервер запущен на ws://localhost:8080');
