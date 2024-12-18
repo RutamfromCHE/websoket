@@ -7,9 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="chatbox"></div>
-  <input type="text" id="messageInput" placeholder="Введите сообщение">
-  <button id="sendButton"> Отправить</button>
+  <div id="chatbox" class="chat-container">
+    <div class="chat-header">Chat</div>
+    <div class="chat-history">
+        <div class="message user">
+            <img src="user-icon.png" alt="User">
+            <div class="message-content">Hello! How can I help you?</div>
+        </div>
+        <div class="message">
+            <img src="bot-icon.png" alt="Bot">
+            <div class="message-content">Hi! I have a question about your services.</div>
+        </div>
+    </div>
+    <div class="chat-input">
+        <input id="messageInput" type="text" placeholder="Введите сообщение">
+        <button id="sendButton">Отправить</button>
+    </div>
+</div>
+
   <script type="module" src="/client/main.js"></script>
 </body>
 </html>
